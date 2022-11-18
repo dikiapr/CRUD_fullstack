@@ -1,0 +1,27 @@
+GET http://localhost:4000/users
+
+###
+GET http://localhost:4000/users/6375a5e563b5051c236931b9
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "name" : "Radiet",
+    "email" : "Shiteryu@gmail.com",
+    "gender" : "Male"
+}
+
+###
+PATCH  http://localhost:4000/users/6375a5e563b5051c236931b9
+Content-Type: application/json
+
+{
+    "name" : "George",
+    "email" : "Georgeo@gmail.com",
+    "gender" : "Male"
+}
+
+###
+DELETE http://localhost:4000/users/6375aaf08322d680a8b7e335
